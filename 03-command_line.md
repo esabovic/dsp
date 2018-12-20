@@ -20,22 +20,32 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* show current working directory path - pwd
+* creating a directory - mkdir 'name of directory'
+* deleting a directory - rmdir 'name of directory'
+* creating a file using `touch` command - touch 'name of file'
+* deleting a file - rm 'name of file'
+* renaming a file - mv 'old name' 'new name'
+* listing hidden files - ls -a
+* copying a file from one directory to another - cp '/file path/' '/destination path/'
+* return to main directory - cd ~
+* return to previous directory - cd ../
+
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls`  - list files in directory
+`ls -a`  - list all files (including hidden) in directory
+`ls -l`  - list all files with dates created
+`ls -lh`  - same as -l but with readable file size
+`ls -lah`  - list all files (including hidden) with dates created & file sizes
+`ls -t`  - lists all files sorted by datetime
+`ls -Glp`  - list all contents and signifies if file or directory
+
 
 ---
 
@@ -43,7 +53,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* ls -R - lists also all subdirectories
+* ls -d - lists only directories
+* ls -1 - lists files on each line
+* ls -m - lists files in comma sep format
+* ls -u - sorts by access time
 
 ---
 
@@ -51,7 +65,9 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+It creates a template of a command:
+
+'echo hobbies.txt | xargs touch'
 
  
 
